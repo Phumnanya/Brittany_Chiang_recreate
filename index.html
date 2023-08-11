@@ -255,7 +255,7 @@
                 let response = await fetch('https://openlibrary.org/search.json?q=the+lord+of+the+rings');
                 let data = await response.json();
                 let mytrans = JSON.parse(data);
-                document.getElementById('cole').innerHTML = mytrans.numFound ;
+                document.getElementById('cole').innerHTML = mytrans.ownerName ;
             }
 	    </script>
 
